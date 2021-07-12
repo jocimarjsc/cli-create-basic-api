@@ -1,0 +1,5 @@
+import { createConnection } from "typeorm";
+
+createConnection()
+    .then(() => console.log("[✔] Database is connected!"))
+    .catch( (e: Error) => console.log("[✖] Database does't connected! "+e))
